@@ -1,0 +1,21 @@
+VAR
+    str : STRING[];
+    nb_words, i, nb_vowels : INTEGER := 0;
+
+BEGIN
+    Write("Give any sentence ending with point");
+    Read(str);    
+  while(str[i] <> '.') DO
+        if(str[i] = 'a' or str[i] = 'e' or str[i] = 'o' or str[i] = 'u' or str[i] = 'i' o str[i] = 'y')
+          nb_vowels := nb_vowels;
+        while(str[i] = ' ') DO
+           nb_words := nb_words + 1;
+        END_WHILE 
+        i := i + 1; 
+  END_WHILE
+  Write("The number of words is : ");
+  Write(nb_words);
+  Write("The number of vowels is : ");
+  Write(nb_vowels);
+END
+  
