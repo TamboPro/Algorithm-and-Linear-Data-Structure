@@ -1,0 +1,28 @@
+VAR
+    jeu1 : INTEGER[];
+    jeu2 : INTEGER[];
+    i, j, SUM, val : INTEGER := 0;
+
+BEGIN
+    Write("Give the number until enter FOR jeu1");
+    WHILE(val <> '\n') DO
+       Read(val);
+       jeu1[i] = val;
+       i := i + 1;
+    END_WHILE
+    Write("Give the number until enter FOR jeu2");
+    WHILE(val <> '\n') DO
+       Read(val);
+       jeu1[i] = val;
+       i := i + 1;
+    END_WHILE
+    FOR i FROM 0 TO jeu1.LENGTH - 1 STEP step  DO 
+       FOR j FROM 0 TO jeu2.LENGTH - 1 STEP step  DO 
+          IF jeu1[i] = jeu2[J] THEN
+             SUM := SUM + 1;
+          END_IF
+        END_FOR
+    END_FOR
+    Write("SUM = " SUM);         
+  
+END
